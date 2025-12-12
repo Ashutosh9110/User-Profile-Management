@@ -13,9 +13,14 @@ navigate('/')
 
 
 return (
-<div className="p-6">
-<h1 className="text-2xl font-semibold mb-4">Edit Profile</h1>
-<ProfileForm onSaved={onSaved} />
-</div>
-)
+  <div className="min-h-screen w-full flex justify-center items-start py-10 bg-white">
+    <div className="w-full max-w-3xl bg-white p-8 rounded-2xl shadow">
+      <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center">
+        Edit Your Profile
+      </h1>
+      <ProfileForm onSaved={onSaved} />
+    </div>
+  </div>
+);
+
 }

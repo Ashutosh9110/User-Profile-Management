@@ -53,7 +53,7 @@ export default function ProfileForm({ onSaved }) {
   )
 
   return (
-    <div className="max-w-xl mx-auto bg-white p-6 rounded shadow">
+      <div className="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg border border-gray-100">
       <Formik
         initialValues={initialValues}
         enableReinitialize
@@ -76,7 +76,11 @@ export default function ProfileForm({ onSaved }) {
 
               <div>
                 <label>Profile Image: </label>
-                <input type="file" onChange={handleFileChange} />
+                <input
+                  type="file"
+                  onChange={handleFileChange}
+                  className="block mt-2 text-sm text-gray-600 file:bg-teal-600 file:text-white file:border-0 file:px-3 file:py-2 file:rounded-md file:hover:bg-teal-800 file:cursor-pointer"
+                />
               </div>
             </div>
             <div>
@@ -123,8 +127,9 @@ export default function ProfileForm({ onSaved }) {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="bg-indigo-600 text-white px-4 py-2 rounded"
+              className="w-full mt-4 bg-teal-600 text-white py-2.5 rounded-lg shadow hover:bg-teal-800 transition-all disabled:bg-gray-400 cursor-pointer"
             >
+
               {isSubmitting ? "Saving..." : "Save Profile"}
             </button>
           </Form>
