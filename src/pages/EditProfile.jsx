@@ -8,7 +8,6 @@ const navigate = useNavigate()
 
 
 const onSaved = useCallback(() => {
-// after save, navigate back to view
 navigate('/')
 }, [navigate])
 
