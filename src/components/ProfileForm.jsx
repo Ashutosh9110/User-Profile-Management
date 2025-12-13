@@ -53,7 +53,7 @@ export default function ProfileForm({ onSaved }) {
   )
 
   return (
-      <div className="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+      <div className="max-w-xl w-full bg-white p-8 rounded-xl shadow-lg border border-gray-100">
       <Formik
         initialValues={initialValues}
         enableReinitialize

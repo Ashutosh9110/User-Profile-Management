@@ -7,12 +7,9 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       <header className="bg-white shadow">
-        <div className="max-w-4xl mx-auto px-4 py-4 grid grid-cols-3 items-center">
+        <div className="w-full px-4 py-4 grid grid-cols-3 items-center">
           <div></div>
-
-          <h1 className="text-3xl font-bold text-center">
-            Profile Module
-          </h1>
+          <h1 className="text-3xl font-bold text-center">Profile Module</h1>
 
           <nav className="flex justify-end items-center gap-3">
             <Link
@@ -34,8 +31,8 @@ export default function App() {
         </div>
       </header>
 
-      <main className="w-full flex justify-center mt-8 px-4">
-        <div className="w-full max-w-4xl">
+      <main className="w-full mt-8 px-4">
+        <div className="w-full max-w-4xl mx-auto">
           <Routes>
             <Route path="/" element={<ViewProfile />} />
             <Route path="/edit" element={<EditProfile />} />
