@@ -70,7 +70,7 @@ export default function ProfileForm({ onSaved }) {
                     className="w-full h-full object-cover"
                   />
                 ) : (
-                  <span className="text-gray-500">No Image</span>
+                  <span className="w-full h-full text-gray-500 flex justify-center items-center">No Image</span>
                 )}
               </div>
 
