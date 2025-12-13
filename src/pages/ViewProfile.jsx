@@ -9,10 +9,8 @@ export default function ViewProfile() {
   return (
     <div className="w-full max-w-3xl mx-auto space-y-8">
       
-      {/* Profile Card */}
       <div className="bg-white rounded-2xl shadow-sm border p-8 flex flex-col sm:flex-row items-center sm:items-start gap-8">
         
-        {/* Avatar */}
         <div className="shrink-0">
           <div className="w-32 h-32 rounded-full bg-gray-100 overflow-hidden ring-4 ring-teal-100">
             {profile.image ? (
@@ -29,7 +27,6 @@ export default function ViewProfile() {
           </div>
         </div>
 
-        {/* Profile Info */}
         <div className="flex-1 text-center sm:text-left space-y-4">
           <div>
             <h2 className="text-3xl font-bold text-gray-900">
